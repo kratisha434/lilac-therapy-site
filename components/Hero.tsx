@@ -1,8 +1,12 @@
-export default function Hero() {
+type HeroProps = {
+  onOpen: () => void;
+};
+
+export default function Hero({ onOpen }: HeroProps) {
   return (
     <section className="bg-background py-24 md:py-32">
       <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
-        
+
         {/* Left Content */}
         <div>
           <p className="section-label">
@@ -21,7 +25,10 @@ export default function Hero() {
           </p>
 
           <div className="flex gap-4 flex-wrap">
-            <button className="btn-primary">
+            <button
+              onClick={onOpen}
+              className="btn-primary"
+            >
               Schedule a Consultation
             </button>
 
@@ -34,7 +41,7 @@ export default function Hero() {
         {/* Right Image */}
         <div>
           <img
-            src="/images/office1.jpeg"
+            src="/images/office2.jpeg"
             alt="Dr. Maya Reynolds office in Santa Monica"
             className="rounded-2xl shadow-lg object-cover w-full h-125"
           />

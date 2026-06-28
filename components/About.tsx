@@ -6,9 +6,9 @@ export default function About() {
         {/* Image */}
         <div>
           <img
-            src="/images/Dr. Maya Reynolds.png"
+            src="/images/Dr.Maya.Reynolds.jpeg"
             alt="Dr. Maya Reynolds, Licensed Clinical Psychologist in Santa Monica"
-            className="rounded-2xl shadow-lg object-cover w-full aspect-[4/5]"
+            className="rounded-2xl shadow-lg object-cover w-full aspect-4/5"
 
           />
         </div>

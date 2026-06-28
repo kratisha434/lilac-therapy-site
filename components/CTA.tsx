@@ -1,9 +1,11 @@
-export default function CTA() {
+type CTAProps = {
+  onOpen: () => void;
+};
+
+export default function CTA({ onOpen }: CTAProps) {
   return (
     <section className="section bg-primary text-white text-center">
       <div className="max-w-3xl mx-auto px-6">
-        
-        
 
         <h2 className="font-heading text-4xl md:text-5xl leading-tight mb-6">
           Begin Therapy at a Pace That Feels Right for You
@@ -16,7 +18,10 @@ export default function CTA() {
           Santa Monica and secure telehealth across California.
         </p>
 
-        <button className="btn-secondary">
+        <button
+          onClick={onOpen}
+          className="btn-secondary"
+        >
           Schedule a Consultation
         </button>
 
